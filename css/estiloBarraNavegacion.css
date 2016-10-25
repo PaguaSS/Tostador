@@ -1,0 +1,103 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: robotoregular;
+	font-weight: normal;
+}
+
+body{
+	background: #EEE;
+}
+
+nav {
+	color: white;
+	background:#424242;
+	box-shadow: 0 1px 4px #333;
+	height: 56px;
+}
+nav div{
+	display: inline-block;
+}
+
+nav .contenedor_nav{
+	width: 100%;
+}
+nav .logo-empresa{
+	width: 18%;
+	box-shadow: 0 1px 4px #333;
+	margin: 1%;
+}
+
+nav .logo-empresa a{
+	text-decoration: none;
+	color: #e53935;
+	background: white;
+  text-align: center;
+	font-size: 18px;
+	padding: 15px;
+	display: block;
+	
+}
+
+nav div.opciones{
+	width: 70%;
+}
+nav div ul li{
+	float: left;
+	margin-left: 5%;
+	list-style:none;
+}
+
+nav ul li:nth-child(4){
+	float: right;
+}
+
+nav div ul li a{
+	text-decoration: none;
+	padding: 5px;
+	margin: 5px;
+	color: #fff;
+}
+nav div ul > li:hover{
+	background: transparent;
+	border-radius:3px;
+	
+}
+nav div ul li a:hover{
+	color: #e53935;
+}
+
+nav ul li ul{
+	display: none;
+	background: #fff;
+	color: #000;
+	position: absolute;
+	width: 15%;
+}
+
+nav div ul li:hover > ul{
+	display: block;
+}
+nav ul li ul li > a{
+	display: block;
+	color: #757575;
+	font-size: 15px;
+	margin-top:0;
+}
+nav ul li ul > li{
+	border-bottom: 1px solid #BDBDBD;
+	width: 95%;
+}
+.logo-empresa img{
+	width: 50px;
+	float: left;
+	padding-left: 20px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.mensaje-bienvenida{
+	padding-left: 25%;
+}
+.mensaje-bienvenida p{
+	text-align: center;
+}

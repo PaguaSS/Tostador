@@ -1,0 +1,1095 @@
+*{
+	padding: 0;
+	margin:0;
+}
+.btn-submit{
+	color: #fff;
+	background: #6ab344;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+	text-decoration: none;
+	text-align: center;
+	padding:10px;
+  transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+}
+
+.mensajes{
+  padding: 5px;
+  color:#1e88e5;
+  font-size: 14px;
+  border:none;
+}
+
+.icono{
+  color: #fff;
+  border-radius: 50%;
+}
+
+.icono.eliminar{
+  background: #ef5350;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*tooltip text*/
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip]:not([data-tooltip=""]) {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+[data-tooltip]:not([data-tooltip=""]):hover { z-index:3;}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+  pointer-events: none;
+  
+  -webkit-transition: 0.15s ease-in-out;
+  -ms-transition: 0.15s ease-in-out;
+  -moz-transition: 0.15s ease-in-out;
+  -o-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
+    
+  -moz-transform: translateX(-20px);
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+/* Position tooltip above the element */
+
+[data-tooltip]:not([data-tooltip=""]):before {
+  position: absolute;
+  top: 50%;
+  margin-top:-14px;
+  margin-right:10px;
+  right: 100%;
+  left:auto;
+  padding: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: left;
+  font-size: 13px;
+  line-height: 18px;
+  white-space:nowrap;
+  text-transform:none;
+  display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height:177px;
+}
+
+.circulo{
+	padding-top:7px;
+	padding-bottom:5px;
+	padding-left:12px;
+	padding-right:12px;
+}
+
+[data-tooltip]:not([data-tooltip=""]):before {
+width:125px;
+white-space:inherit; 
+}
+
+[data-tooltip]:not([data-tooltip=""]):before {
+ right:auto;
+ left:100%;
+ margin-left:10px;
+ margin-right:0;
+ 
+ -moz-transform: translateX(20px);
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+
+[data-tooltip]:not([data-tooltip=""]):after {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-right:5px;
+  margin-top:-5px;
+  width: 0;
+  border-style:solid;
+  border-width: 5px 0px 5px 5px;
+  border-color: transparent transparent transparent rgba(0,0,0, 0.85);  
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+
+/* Show tooltip content on hover */
+[data-tooltip]:not([data-tooltip=""]):hover:before,
+[data-tooltip]:not([data-tooltip=""]):hover:after {
+
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  opacity: 1;
+  -moz-transform: translateX(0px) !important;
+  -webkit-transform: translateX(0px) !important;
+  transform: translateX(0px) !important;
+}
+
+/* end of tooltip text*/
+
+/*Login form*/
+.form-login{
+	margin-top: 10%;
+}
+
+.form-login form{
+	width: 40%;
+	margin: auto;
+}
+form{
+	background: #fff;
+	padding: 20px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+form p{
+	font-size: 20px;
+	color: #616161;
+	border-bottom: 1px solid #BDBDBD;
+}
+
+form input{
+	display: block;
+	margin: auto;
+}
+
+input[type="text"], input[type="password"]{
+	padding: 10px;
+	width: 50%;
+	border: none;
+	border-radius: 3px;
+	font-size:15px;
+	margin-top:3%;
+}
+
+form a{
+	color: #fff;
+	background: #6ab344;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+	text-decoration: none;
+	text-align: center;
+	padding:10px;
+}
+
+.form-login .layout-btns{
+	margin-left: 23%;
+	margin-top: 5%;
+}
+
+.contenedorModal{
+	background: rgba(224, 224, 224, 0.7);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+
+/*Modal add producto*/
+.contenedorModal #fProducto{
+  width: 30%;
+  margin-left:35%;
+  margin-top:2%;
+  overflow: auto;
+}
+#fProducto .opsFProducto {
+    float: right;
+    margin-top: 8%;
+}
+#fProducto label{
+  display: block;
+  margin-left: 15px;
+  margin-top:4px;
+}
+
+#fProducto select{
+  width: 88%;
+  height: 25px;
+  margin-left: 12px;
+}
+
+#fProducto {
+  margin-left: 100px;
+}
+#fProducto ul{
+  margin-top: 2%;
+}
+#fProducto ul li{
+  float: left;
+  width: 50%;
+  list-style: none;
+}
+#fProducto ul+div{
+  display: block;
+  clear: both;
+  padding-top: 6%;
+  margin-left: 3%;
+}
+.btn-bAddMixtos{
+  background-color: #ef5350;
+  font-size: 15px;
+}
+#fProducto input{
+  width: 90%;
+  margin-top: 0;
+}
+#fProducto input[type="text"]{
+  padding: 7px;
+}
+
+#fProducto input[type="checkbox"]{
+  width:5%;
+  display:inline-block;
+}
+
+#fProducto label {
+  color: #757575;
+  margin-top: 4%;
+}
+/*Modal add producto*/
+/*modal recuperar contraseña administrador*/
+.recContra{
+	width: 40%;
+	margin-top: 10%;
+  margin-left: 25%;	
+	overflow:auto;
+}
+.recContra input{
+	margin: 0;
+	width: 100%;
+}
+.recContra a{
+	display: inline-block;
+	margin-top:2%;	
+}
+
+/*modulo pedido*/
+
+.flotante {
+	display:inline-block;
+	background-color: #d23f31;
+  	height: 56px;
+  	position: fixed;
+  	width: 56px;
+	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+  	cursor: pointer;
+  	border-radius: 50%;
+	color: #fff;
+	bottom: 45px;
+ 	right: 24px;
+	text-align: center;
+	font-size:14px;
+	text-decoration:none;
+	line-height: 54px;
+}
+
+.dropA{
+  text-decoration: none;
+}
+
+.dropLi{
+  list-style: none;
+}
+
+.menu-fab li{
+  margin-bottom: 15px;
+}
+.menu-fab a{
+  padding: 5px;
+}
+
+.menu-fab a{
+  background-color:#0277bd;
+  color:#fff;
+  border-radius: 5px;
+}
+
+.menu-fab{
+    bottom: 45px;
+    right: 40px;
+    height: 130px;
+  	position: fixed;
+  	width: 56px;
+    -moz-animation: 1s subir 1;
+}
+
+@-moz-keyframes subir{
+  from{
+    height: 70px;
+  }
+
+  to{
+    height: 130px;
+  }
+}
+
+
+.menuLateral{
+	float:left;
+	width: 15%;
+  	background: #fff;
+  	height: 200px;
+	margin-top:4%;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.menuLateral p{
+	font-size: 20px;
+	background: #ffab40;
+	color: #fff;
+	padding-left: 5%; 
+}
+
+.menuLateral ul{
+	margin-top: 4%;
+	margin-left: 9%;
+}
+
+.menuLateral li{
+	margin-top: 6%;
+}
+.menuLateral a{
+	color: #616161;
+	text-decoration: none;
+}
+
+.menuLateral a:hover{
+	text-decoration: blue;
+}
+
+
+.contenedorPedidoSucr{
+	margin: 10%;
+	width: 70%;
+	background: #fff;
+	overflow:auto;
+}
+
+.contenedorPedidoSucr .frmPedido, 
+.contenedorPedidoSucr .frmInsertDetalle{
+	float: left;
+}
+
+.contenedorPedidoSucr form{
+  box-shadow:none;
+}
+
+.frmPedido{
+  color: #616161;
+	width: 60%;
+}
+
+.frmPedido table {
+	border-spacing: 0;
+}
+
+.frmPedido th, .frmPedido td{
+	border-spacing: 0;
+	text-align: center;
+  border-collapse: collapse;
+}
+
+.frmPedido thead tr:nth-child(3){
+	background: #e53935;
+	color: #fff;
+}
+
+.frmPedido tbody tr:nth-child(odd){
+	background: #e0e0e0;
+}
+
+.frmInsertDetalle {
+	width: 35%;
+	margin-top: 10%;
+} 
+.frmInsertDetalle p{
+	background: #26a69a;
+	text-align: center;
+	width: 66%;
+	padding: 5px;
+	border-radius: 2px;
+}
+
+.frmInsertDetalle input, .frmInsertDetalle a{
+	display: block;
+}
+
+.frmInsertDetalle input{
+	width: 63%;
+}
+
+.frmInsertDetalle .btn-flat{
+	margin-top: 5%;
+}
+
+.opPedido{
+	margin-top: 20%;
+}
+
+.opPedido a{
+	display: inline-block;
+	width: 30%;
+}
+
+.inputShadow{
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.btn-flat{
+	background: #26a69a;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	width: 50%;
+	border: none;
+	border-radius: 2px;
+	display: inline-block;
+	height: 36px;
+	line-height: 36px;
+	outline: 0;
+	padding: 0 2rem;
+}
+
+.contenedorSecundario{
+	width: 70%;
+	float: left;
+	background: white;
+	margin-top: 4%;
+	margin-left:4%;
+	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+	color:#424242;
+	height: 500px;
+}
+
+.contenedorSecundario p{
+	color: #616161;
+	width: 90%;
+	padding-left: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border-bottom: 1px solid #9e9e9e;  
+}
+.contenidoPedidos{
+	margin-left: 2%;
+}
+
+.barBusqueda input{
+	display: inline-block;
+	width: 30%;
+}
+
+/*Administrar sucursales*/
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+input.cmn-toggle-yes-no + label {
+  padding: 2px;
+  width: 60px;
+  height: 30px;
+}
+input.cmn-toggle-yes-no + label:before,
+input.cmn-toggle-yes-no + label:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  font-size: px;
+  text-align: center;
+  line-height: 30px;
+}
+input.cmn-toggle-yes-no + label:before {
+  background-color: #f44336;
+  content: attr(data-off);
+  transition: transform 0.5s;
+  backface-visibility: hidden;
+}
+input.cmn-toggle-yes-no + label:after {
+  background-color: #6ab344;
+  content: attr(data-on);
+  transition: transform 0.5s;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+input.cmn-toggle-yes-no:checked + label:before {
+  transform: rotateY(180deg);
+}
+input.cmn-toggle-yes-no:checked + label:after {
+  transform: rotateY(0);
+}
+
+/*Administrar sucursales*/
+#contenedorAdministrador{
+	margin-top: 5%;
+}
+
+.contenedorSucursales{
+	width: 50%;
+	height: 400px;
+	margin: auto;
+	background-color: #fff;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contenedorSucursales .add{
+	float: right;
+	margin:10px;
+	font-size: 25px;
+	color: #e53935;
+	cursor: pointer;
+}
+.contenedorSucursales .add:hover{
+	color: #ef5350;
+}
+
+.contenedorSucursales p{
+	color: #fff;
+	background: #009688;
+	padding: 10px;
+	word-spacing: 2px;
+}
+
+.contenedorSucursales .barBusqueda{
+	width: 100%;
+	padding-bottom: 5%;
+	margin-left:2%;;
+	margin-right:2%;
+}
+
+.contenedorSucursales .barBusqueda input{
+	width: 80%;
+	margin-left: 5%;
+	border-bottom: none;
+}
+
+.contenedorLista table{
+	margin: auto;
+	border-spacing:0;
+}
+
+.contenedorLista table tbody{
+	display: block;
+	min-height: 100px;
+	max-height: 250px;
+	overflow-y:auto;
+	overflow-x: hidden;
+}
+
+.contenedorLista table tr:nth-child(odd){
+	background-color:#e6e6e6;
+}
+
+.contenedorLista table td{
+	padding-left:15px;
+	padding-right: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+table.listaCnNombres td:nth-child(1){
+  	padding: 5;
+  	display: inline-block;
+ 	width: 200px;
+}
+#tablaEmpleados tr:nth-child(even) td:nth-child(1),
+#tablaEmpleados tr:nth-child(odd) td:nth-child(1){
+	padding-right: 180px;
+}
+.contenedorLista table a{
+	color:#616161;
+	text-decoration: none;
+}
+
+.contenedorSucursales .frmAdd{
+	width: 50%;
+	margin-top:5%;
+	margin-left:23%;
+}
+
+.frmAdd p{
+	background-color:#fff;
+	color: #616161;
+	border-bottom: 1px solid #616161;
+}
+
+.frmAdd input{
+	border-radius: 0;
+	border-bottom: none;
+	font-size: 15px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.frmAdd #tituloSelect{
+	margin-left: 23.5%;
+	color: #616161;
+}
+
+.frmAdd select{
+	margin-top:2%;
+	margin-left:23.5%;
+	padding-right: 25%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	font-size: 15px;
+}
+
+.frmAdd #busEmpleado{
+	display: inline-block;
+	margin-left: 23.5%;
+}
+
+.frmAdd table{
+	display: block;
+	max-height: 150px;
+	border: 1px solid #c6c6c6;
+	margin-top: 2%;
+	margin-left:23.5%;
+	width:55%;
+	overflow-x: auto;
+}
+
+.frmAdd table td{
+  padding: 16px;
+}
+
+.frmAdd .contenedorSwitch{
+	margin-left: 23.5%;
+}
+
+.frmAdd .switch{
+	display: inline-block;
+	margin-top: 2%;
+}
+
+.frmAdd .contenedorSwitch span{
+	display:inline-block;
+	color:#616161;
+}
+.frmAdd .btn-submit{
+	font-size: 15px;
+}
+
+.frmAdd .footOpsFrm {
+  width: 30%;
+	margin-left: 73%;
+}
+
+.etiqueta{
+	display: block;
+	color: #616161;
+}
+
+
+.frmAdd .etiqueta{
+	margin-top: 2%;
+	margin-left: 23.5%;
+}
+
+/*Estilo tablas*/
+table{
+	border-spacing:0;
+}
+table tr{
+	color:#616161;
+}
+table tr:nth-child(odd){
+	background:#c2c2c2;
+}
+
+table td.ocultaTd{
+	display:none;
+}
+
+#showEmpleados{
+  width: 80%;
+  margin-top:5%;
+  margin-left: 10%;
+}
+
+#showEmpleados tr:nth-child(2n+1){
+  background: #fff;
+}
+
+
+#showEmpleados p{
+  background-color: #fff;
+  color: #717171;
+}
+
+#showEmpleados .icono{
+  background-color: #
+}
+/*Estilo tablas*/
+
+/*Agregar categoria*/
+.formDModal{
+  width: 40%;
+  background-color: #fff;
+  margin-left: 30%;
+  margin-top: 10%;
+  height: 20%;
+}
+.formDModal label{
+  background: #d23f31;
+  color: #fff;
+  text-align: center;
+  padding: 2px;
+  display: block;
+}
+.formDModal input{
+  display: block;
+  width: 60%;
+  margin-left: 20%;
+}
+.opsAddCategoria {
+    float: right;
+    margin-top: 5%;
+}
+/*Fin agregar categoria*/
+
+/*Tabla producto*/
+.tbProducto{
+  display: block;
+  margin:5%;
+  max-height: 100px;
+}
+.tbProducto tbody{
+  display: block;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.tbProducto tr:nth-child(1){
+  color: #fff;
+  background-color: #d23f31;
+}
+.tbProducto tr td:nth-child(1){
+   width: 15%;
+   padding:3px;
+}
+.tbProducto tr td:nth-child(2),
+.tbProducto tr td:nth-child(3),
+.tbProducto tr td:nth-child(4),
+.tbProducto tr td:nth-child(5),
+.tbProducto tr td:nth-child(6),
+.tbProducto tr td:nth-child(7){
+  text-align: center;
+}
+
+.tbProducto td{
+  width: 7%;
+  text-align: cente;
+}
+/*Tabla producto*/
+
+/*Tabla Categoria*/
+.contenedorTbCategoria {
+  width: 40%;
+  margin: 5%;
+  margin-left: 30%;
+}
+
+.contenedorTbCategoria table{
+  width: 100%;
+}
+
+/*Form agregar productos mmixtos*/
+#fListProductoMixto div:nth-child(1){
+  background:#fff;
+  width:62%;
+  overflow:auto;
+  margin-top:5%;
+  margin-left:20%;
+  padding:15px;
+}
+
+#fListProductoMixto  ul li{
+  float:left;
+  list-style: none;
+}
+#fListProductoMixto ul li div a{
+  display: block;
+  text-decoration: none;
+  margin-right:20%;
+}
+#fListProductoMixto ul li div a:nth-child(1){
+  margin-top: 150%;
+}
+#fListProductoMixto ul li div a:nth-child(2){
+  padding-top:10px;
+  padding-right: 0px;
+}
+#fListProductoMixto ul li div a span{
+  padding: 7px;
+  color: #fff;
+  background-color: #d32f2f;
+  border-radius: 30%;
+}
+
+#fListProductoMixto .opsTbMixtos{
+  clear: both;
+  margin-top: 270px;
+  margin-left: 40%;
+}
+
+#fListProductoMixto table tbody{
+  display: block;
+  min-height:200px;
+  max-height:200px;
+  overflow-y:auto;
+}
+
+#fListProductoMixto table input[type="checkbox"]{
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+#fListProductoMixto table tbody td{
+  width: 350px;
+}
+
+
+/*Estilos form Productos mixtos*/
+
+.sombraModal{
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+/*Tabla estilos estandar*/
+.tbEstandar{
+  border: 1px solid #c6c6c6;
+}
+
+.tbEstandar thead tr{
+  background-color:#e53935;
+  color: #fff;
+}
+
+.tbEstandar td,.tbEstandar th{
+  padding: 5px;
+}
+.tbEstandar tbody td a{
+  color:#616161;
+  font-size: 15px;
+  text-decoration: none;
+}
+.tbEstandar tbody tr:nth-child(odd){
+  background-color: #e0e0e0;
+}
+
+/*Estilos venta*/
+.venta .encabezadoVenta{
+  width: 45%;
+  margin: 2.5%;
+  text-align:center;
+}
+
+.venta ul{
+  list-style: none;
+}
+
+.venta ul li{
+  float: left;
+  margin: 2.5%;
+}
+.venta ul li:nth-child(1){
+  width: 55%;
+}
+
+.venta ul li:nth-child(2){
+  width: 30%;
+}
+
+.venta ul li:nth-child(2) input[type="text"]{
+  width: 90%;
+}
+
+.venta .fIngresoDetalle input[type="submit"]{
+  display: inline-block;
+  border:0 none;
+  padding: 9px;
+  font-size: 16px;
+}
+
+.fIngresoDetalle input[type="submit"], .fIngresoDetalle a{
+  margin-top: 4%;
+}
+
+
+.tbUnida {
+  width: 100%;
+}
+
+.tbUnida tr:nth-child(odd){
+  background-color:#e0e0e0;
+}
+
+.tbUnida .tr td{
+  background-color:#d23f31;
+  color: #fff;
+}
+
+.tbUnida tbody{
+  max-height: 250px;
+  min-height: 250px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.tbUnida tbody td{
+  padding: 3px;
+  width: 20%;
+  text-align: center;
+}
+
+.tbUnida tbody td:nth-child(6){
+ width:10%;
+}
+.venta .listaCompra{
+  min-height: 220px;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.icon-colon {
+  width: 10%;
+}
+
+/*Tabla que muestra el cambio despues de la compra*/
+
+.tbCambio{
+  border: 1px solid #e0e0e0;
+  margin: auto;
+  width: 50%;
+}
+.tbCambio td{
+  padding: 4px;
+  border: 1px solid #e0e0e0;
+}
+.tbCambio tr:nth-child(odd){
+  background-color: #fff;
+}
+.tbCambio tr:nth-child(5){
+  background-color: #e53935;
+  color: #fff;
+}
+.tbCambio tr td:nth-child(1){
+  width: 50%;
+}
+.tbCambio img{
+   width: 8%;
+   margin-right: 3px;
+}
+
+.icono-flat{
+  margin-right: 9px;
+  padding: 7px;
+  border-radius: 50%;
+  background-color:#795548;
+  color: #fff;
+}
+/*colores*/
+.indigo{
+  background-color:  #3f51b5;
+}
+.celeste{
+   background-color:  #2196f3;
+}
+
+.whats{
+  background-color:  #009688;
+}
+.naranja{
+  background-color: #ef6c00;
+}
+
+.cafe{
+  background-color:#795548 ;
+}
+/*colores*/
+.opBarNav:hover > span{
+  background-color: #e53935;
+  color: #fff;
+  border-radius: 50%;
+ -webkit-transition: all 500ms ease;
+-moz-transition: all 500ms ease;
+-ms-transition: all 500ms ease;
+-o-transition: all 500ms ease;
+transition: all 500ms ease;
+}
